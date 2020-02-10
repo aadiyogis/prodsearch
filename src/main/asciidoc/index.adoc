@@ -1,0 +1,29 @@
+= Product Search Docs
+Aditya;
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+
+Sample application demonstrating how to use Spring REST Docs with JUnit 5.
+
+`ProductControllerTest` makes a call to a very simple service and produces three
+documentation snippets.
+
+One showing how to make a request using cURL:
+
+include::{snippets}/product/curl-request.adoc[]
+
+One showing the HTTP request:
+
+include::{snippets}/product/http-request.adoc[]
+
+And one showing the HTTP response:
+
+include::{snippets}/product/http-response.adoc[]
+
+Response Body:
+include::{snippets}/product/response-body.adoc[]
+
+
+Response Fields:
+include::{snippets}/product/response-fields.adoc[]
