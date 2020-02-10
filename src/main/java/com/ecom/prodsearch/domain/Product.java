@@ -1,6 +1,5 @@
 package com.ecom.prodsearch.domain;
 
-import com.ecom.prodsearch.web.model.ProductType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -8,10 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.persistence.*;
-import javax.validation.constraints.*;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
-import java.util.UUID;
 
 /**
  * aditya created on 09/02/20
