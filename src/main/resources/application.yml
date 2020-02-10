@@ -1,5 +1,7 @@
 server:
-  port: 8000
+  port: 9000
+  servlet:
+    context-path: /ecom
 
 logging:
   level:
@@ -8,6 +10,8 @@ logging:
     com.ecom.prodsearch: DEBUG
 
 spring:
+  application:
+    name: ecom
   datasource:
     platform: h2
     url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;
