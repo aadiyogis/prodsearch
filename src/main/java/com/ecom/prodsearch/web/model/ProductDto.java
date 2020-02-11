@@ -5,10 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Positive;
-import javax.validation.constraints.PositiveOrZero;
+import javax.validation.constraints.*;
 import java.math.BigDecimal;
 
 /**
@@ -35,6 +32,7 @@ public class ProductDto {
     @NotNull
     private String size;
 
+    @Null
     @PositiveOrZero
     private Integer quantity;
 }

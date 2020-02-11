@@ -40,8 +40,8 @@ public class Product {
     private Integer quantity;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "product_id_sequence")
-    @SequenceGenerator(name = "product_id_sequence", allocationSize = 100)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PRODUCT_ID_SEQ")
+    @SequenceGenerator(name = "PRODUCT_ID_SEQ", allocationSize = 100)
     private Long id;
 
     @Column(name = "CREATED_DATE")

@@ -1,7 +1,9 @@
 package com.ecom.prodsearch.service;
 
 import com.ecom.prodsearch.domain.Product;
+import com.ecom.prodsearch.web.model.ProductDto;
 
+import javax.validation.Valid;
 import java.util.List;
 
 /**
@@ -10,4 +12,6 @@ import java.util.List;
 public interface IProducts {
 
     List<Product> getAll();
+
+    ProductDto save(@Valid ProductDto product);
 }
