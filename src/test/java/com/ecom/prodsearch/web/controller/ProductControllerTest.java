@@ -73,13 +73,22 @@ class ProductControllerTest {
                 .content(shirtProd)
                 .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(status().isCreated())
-                .andDo(document("v1/product", requestFields(
-                        fieldWithPath("name").description("name of product"),
-                        fieldWithPath("brand").description("brand of product"),
-                        fieldWithPath("productType").description("product type"),
-                        fieldWithPath("price").description("price of product"),
-                        fieldWithPath("size").description("size of product"),
-                        fieldWithPath("quantity").description("quantity present")
-                )));
+                .andDo(document("v1/product",
+                        requestFields(
+                                fieldWithPath("name").description("name of product"),
+                                fieldWithPath("brand").description("brand of product"),
+                                fieldWithPath("productType").description("product type"),
+                                fieldWithPath("price").description("price of product"),
+                                fieldWithPath("size").description("size of product"),
+                                fieldWithPath("quantity").ignored()
+                        ),
+                        responseFields(
+                                fieldWithPath("name").description("name of product"),
+                                fieldWithPath("brand").description("brand of product"),
+                                fieldWithPath("productType").description("product type"),
+                                fieldWithPath("price").description("price of product"),
+                                fieldWithPath("size").description("size of product"),
+                                fieldWithPath("quantity").description("quantity of product created")
+                        )));
     }
 }
