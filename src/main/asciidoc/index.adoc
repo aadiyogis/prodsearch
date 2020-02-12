@@ -26,7 +26,6 @@ include::{snippets}/v1/product/all/http-response.adoc[]
 Response Body:
 include::{snippets}/v1/product/all/response-body.adoc[]
 
-
 PRODUCT SAVE
 
 One showing how to make a request using cURL:
@@ -40,6 +39,10 @@ include::{snippets}/v1/product/http-request.adoc[]
 And one showing the HTTP response:
 
 include::{snippets}/v1/product/http-response.adoc[]
+
+
+Request Fields:
+include::{snippets}/v1/product/request-fields.adoc[]
 
 Response Body:
 include::{snippets}/v1/product/response-body.adoc[]
